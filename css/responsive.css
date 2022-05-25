@@ -1,0 +1,84 @@
+
+
+@media only screen and (max-width:1199px) {
+     .menubar > ul > li > a {
+        padding: 7px;
+    }
+    .cart-store a {
+    padding: 0 8px;
+    }
+    .logo a img {
+        width: 60px;
+        padding: 0;
+    }
+    .logo.menubar-mobile {
+        padding: 2px 0;
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+    body{
+        font-size: 14px;
+    }
+    .mobileAdd {
+    left: 0 !important;
+    width: 100%;
+    z-index: 2;
+    }
+    .section-title-main {
+    font-size: 28px;
+    line-height: 25px;
+    }
+    #team .card .card-heading {
+    font-size: 22px;
+}
+    #team .card .card-text {
+    font-size: 14px;
+}
+    .section-title-main {
+    font-size: 22px;
+}
+    #service .container p {
+    font-size: 16px;
+}
+    #service .icon-card img {
+    height: auto;
+        max-width: 100px;
+    
+}
+    #footer .social-icons .circle i {
+    height: 27px;
+    width: 27px;
+    line-height: 27px;
+    font-size: 12px;
+    margin-right: 3px;
+}
+    .card h5 {
+    font-size: 16px;
+}
+    .contact h2 {
+    font-size: 45px;
+}
+    .contact p {
+    font-size: 25px;
+}
+    #page-header .page-title-bg .breadcrumb a {
+    font-size: 18px;
+}
+    #product-details .product-info-1 .p-name {
+    font-size: 20px;
+}
+    #product-details .product-info-1 .p-price {
+    font-size: 18px;
+}
+    #product-details .posted_in {
+    font-size: 14px;
+}
+    .nav-link.product-details-btn {
+    font-size: 14px;
+}
+    #page-header .page-title-bg .breadcrumb a {
+    font-size: 18px;
+}
+}
