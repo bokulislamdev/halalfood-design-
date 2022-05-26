@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--    father icons-->
     <script src="https://unpkg.com/feather-icons"></script>
-
+    <!-- custom -->
     <!--    google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
 
-    <!-- custom -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
 </head>
@@ -67,7 +66,6 @@
             </div>
         </div>
     </div>
-
 
 
     <!--    HEADER SECTION-->
@@ -159,51 +157,12 @@
                                     </form>
                                 </div>
                                 <div class="cart-store">
-                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-user-large"></i></a></li>
-                                    <li class="cart-overlay-btn">
-                                        <a href="#">
-                                            <span>৳ 0.00</span>
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                        </a>
-
-                                        <div class="cart-overlay p-3">
-                                            <div class="cart-overlay-product d-flex justify-content-between">
-                                                <a href="#" class="cart-over-image"><img src="img/product-single-1.webp" alt=""></a>
-                                                <a href="#" class="cart-over-p">
-                                                    <p>৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)</p>
-                                                    <span>2 × ৳ 850.00</span>
-                                                </a>
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </div>
-                                            <div class="cart-overlay-product d-flex justify-content-between">
-                                                <a href="#" class="cart-over-image"><img src="img/product-single-1.webp" alt=""></a>
-                                                <a href="#" class="cart-over-p">
-                                                    <p>৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)</p>
-                                                    <span>2 × ৳ 850.00</span>
-                                                </a>
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </div>
-                                            <div class="cart-overlay-product d-flex justify-content-between">
-                                                <a href="#" class="cart-over-image"><img src="img/product-single-1.webp" alt=""></a>
-                                                <a href="#" class="cart-over-p">
-                                                    <p>৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)</p>
-                                                    <span>2 × ৳ 850.00</span>
-                                                </a>
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </div>
-
-                                            <div class="cart-overlay-subtotal">
-                                                <p>Subtotal: <span>৳ 4,500.00</span></p>
-                                            </div>
-                                            <div class="cart-overlay-view-cart">
-                                                <a href="#">View Cart</a>
-                                            </div>
-                                            <div class="cart-overlay-view-cart mt-2">
-                                                <a href="#">Checkout</a>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                    <a href="#"><i class="fa-solid fa-user-large"></i></a>
+                                    <a href="#">
+                                        <span>৳ 0.00</span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
                                 </div>
 
                             </div>
@@ -327,211 +286,145 @@
     <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
     <!--    MOBILE MENU END-->
 
-
-
-    <!-- slider -->
-    <section id="slider">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="./img/slide_1.jpg" alt="First slide" />
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="./img/slide_1.jpg" alt="Second slide" />
+    <!--    CART-->
+    <section id="cart">
+        <div class="container">
+            <div class="row">
+                <div class="page-heading d-flex justify-content-center">
+                    <a class="step-1 active" href="#">Shopping Cart</a>
+                    <a class="step-1" href="#">Checkout details</a>
+                    <a class="step-2 " href="#">Order Complete</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section 2 -->
-
-    <section id="product">
-        <div class="container">
-            <h2 class="d-flex section-title align-items-center">
-                <b></b><span class="section-title-main m-4">পপুলার পণ্য</span><b></b>
-            </h2>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="javascript:void(0)" class="quick-view text-center" onclick="quicView()">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="javascript:void(0)" class="quick-view text-center" onclick="quicView()">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="javascript:void(0)" class="quick-view text-center" onclick="quicView()">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="javascript:void(0)" class="quick-view text-center" onclick="quicView()">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- section 3 -->
-    <section id="premium-dates">
-        <div class="container">
-            <h2 class="d-flex section-title align-items-center">
-                <b></b><span class="section-title-main m-4">প্রিমিয়াম খেজুর</span><b></b>
-            </h2>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#" class="quick-view text-center">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
+            <div class="row cart-sec">
+                <div class="col-12 col-md-8 p-0">
+                    <div class="row table">
+                        <div class="col-12">
+                            <table class="table cart-table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">PRODUCT</th>
+                                        <th class="text-center" scope="col">PRICE</th>
+                                        <th class="text-center" scope="col">QUANTITY</th>
+                                        <th class="text-center" scope="col">SUBTOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="p-row d-flex align-items-center">
+                                                <a href="#" class="cross-product"><i class="fa-regular fa-2x fa-circle-xmark"></i></a>
+                                                <div class="p-img mx-4">
+                                                    <img class="round" style="width: 80px" src="https://picsum.photos/200" alt="img" />
+                                                </div>
+                                                <div class="p-name">
+                                                    <h5 class="m-0">
+                                                        <a href="#" class="cart-product-name">অর্গানিক আখের গুড় (১ কেজি)</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"> <span class="cart-price">ট 350.00</span></td>
+                                        <td class="text-center">
+                                            <div class="cart-count">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>-</td>
+                                                            <td>1</td>
+                                                            <td>+</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            ৳ <span class="cart-price">350.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="p-row d-flex align-items-center">
+                                                <a href="#" class="cross-product"><i class="fa-regular fa-2x fa-circle-xmark"></i></a>
+                                                <div class="p-img mx-4">
+                                                    <img class="round" style="width: 80px" src="https://picsum.photos/200" alt="img" />
+                                                </div>
+                                                <div class="p-name">
+                                                    <h5 class="m-0">
+                                                        <a href="#" class="cart-product-name">অর্গানিক আখের গুড় (১ কেজি)</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"> <span class="cart-price">ট 350.00</span></td>
+                                        <td class="text-center">
+                                            <div class="cart-count">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>-</td>
+                                                            <td>1</td>
+                                                            <td>+</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            ৳ <span class="cart-price">350.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="continue-shopping pt-4">
+                                <a href=""> <i data-feather="arrow-left"></i> Continue shopping</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="javascript:void(0)" class="quick-view text-center">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#" class="quick-view text-center">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card product-box">
-                        <div class="product-image-box">
-                            <img class="card-img-top" src="./img/product_1.jpg" alt="Card image cap" />
-                            <a href="#" class="quick-cart"><i class="fa-solid fa-heart"></i></a>
-                            <a href="#" class="quick-view text-center">QUICK VIEW</a>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="category">গুঁড়া মশলা</p>
-                            <a href="#">
-                                <h5 class="card-title">
-                                    ৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)
-                                </h5>
-                            </a>
-                            <p class="card-text">ট <span class="p-price">850.00</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section 4 -->
-    <section id="about-products">
-        <div class="container">
-            <h2 class="d-flex section-title align-items-center">
-                <b></b><span class="section-title-main m-4">পণ্য সম্পর্কে জানুন</span><b></b>
-            </h2>
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <iframe width="100%" height="247" src="https://www.youtube.com/embed/vGpaxUSny1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-12 col-md-4">
-                    <iframe width="100%" height="247" src="https://www.youtube.com/embed/vGpaxUSny1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col-12 col-md-4">
-                    <iframe width="100%" height="247" src="https://www.youtube.com/embed/vGpaxUSny1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div class="button text-center">
-                    <a href="#">আরও জানুন ></a>
+                    <div class="billing-sec">
+                        <div class="bill-heading">cart totals</div>
+                        <div class="bill-title d-flex justify-content-between">
+                            <div class="">Subtotal</div>
+                            <div class=""><span class="total-bill">৳ 840.00</span></div>
+                        </div>
+                        <div class="shipping">Shipping</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="shipping-area" id="inside" value="inside" checked>
+                            <label class="checkout-label" for="inside">
+                                Inside Dhaka: ৳ 50.00
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="shipping-area" id="outside" value="outside">
+                            <label class="checkout-label" for="outside">
+                                Outside Dhaka: ৳ 100.00
+                            </label>
+                        </div>
+                        <div class="shipping">Shipping to <span class="shipping-loc">Dhaka</span></div>
+                        <div class="bill-title bill-title-2 d-flex justify-content-between">
+                            <div class="">Total</div>
+                            <div class="">৳ <span class="total-bill">840.00</span></div>
+                        </div>
+                        <a class="process-btn" href="#">Proceed to checkout</a>
+
+                        <!-- coupon -->
+                        <div class="coupon">
+                            <h5 class="coupon-title"><i class="fa-solid fa-tag"></i> Coupon</h5>
+                            <form action="#" class="form cupon-form">
+                                <input type="text" placeholder="Coupon code">
+                                <a class="process-btn" href="#">Apply Coupon</a>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--    cart end-->
+
+
     <!-- Footer -->
     <footer id="footer" class="footer-wrapper">
         <div class="container">
@@ -629,72 +522,6 @@
         </div>
     </footer>
     <!-- fb script -->
-
-
-    <!--    product quick view-->
-    <div class="product-quick-view-main" style="overflow: auto;">
-        <div style="position: relative; height: 100vh;width: 100%;">
-            <div class="product-quick-box p-3 p-lg-0">
-                <div class="product-details" id="product-details">
-                    <div class="row pb-10">
-                        <div class="col-12 col-lg-5">
-                            <div class="p-image">
-                                <img class="img-fluid" src="./img/product-single-1.webp" alt="" style="width: 580; height:580;" srcset="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-5">
-                            <div class="product-info-1">
-                                <h1 class="p-name">
-                                    অর্গানিক আখের গুড় (১ কেজি)
-                                </h1>
-                                <div class="is-divider"></div>
-                                <p class="p-price">From: <span class="p-amount">৳ 350.00</span></p>
-                                <div class="p-short-des">
-                                    <div dir="auto"><strong>ঢাকাতে ৫০ টাকা</strong></div>
-                                    <div dir="auto"><strong>ঢাকার বাহিরে ১০০ টাকা</strong></div>
-                                </div>
-                                <form class="input-form py-2" action="#">
-                                    <label class="form-label product-weight" for="">ওজন</label>
-                                    <select class="unit-selector" name="" id="">
-                                        <option value="">১ কেজি</option>
-                                        <option value="">২ কেজি</option>
-                                        <option value="">৫ কেজি</option>
-                                    </select>
-                                    <div class="d-flex align-items-center py-4">
-                                        <div class="cart-count">
-                                            <table>
-                                                <tr>
-                                                    <td>-</td>
-                                                    <td>1</td>
-                                                    <td>+</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div class="cart-btn">
-                                            <a href="#">Add to Cart</a>
-                                            <a href="#">Buy Now</a>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="product-meta clearfix">
-                                    <p class="posted_in">SKU: N/A</p>
-                                    <p class="posted_in">Category: পপুলার</p>
-                                    <p class="posted_in">Category: পপুলার</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            
-        </div>
-        <i class="fa-solid fa-xmark product-over-cross" onclick="quiteView()"></i>
-    </div>
-    <!--    product quick view end-->
-
-
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="l1n2m7lg"></script>
     <!-- jQuery -->
     <script src="./js/jquery.min.js"></script>
@@ -715,14 +542,6 @@
 
         //feather icons
         feather.replace()
-
-        function quicView() {
-            document.querySelector('.product-quick-view-main').style.display = "block"
-        }
-        
-        function quiteView(){
-            document.querySelector('.product-quick-view-main').style.display = "none"
-        }
 
     </script>
 </body>

@@ -4,15 +4,19 @@
      .menubar > ul > li > a {
         padding: 7px;
     }
-    .cart-store a {
-    padding: 0 8px;
-    }
     .logo a img {
         width: 60px;
         padding: 0;
     }
     .logo.menubar-mobile {
         padding: 2px 0;
+    }
+}
+
+
+@media only screen and (max-width:991px) {
+    .product-quick-box{
+        width: 90% !important;
     }
 }
 
